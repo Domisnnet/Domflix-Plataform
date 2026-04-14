@@ -3,7 +3,7 @@ import {
   getRandomMatchScore,
   getRandomDuration,
   getRandomAgeBadge,
-} from '../utils.js';
+} from './utils.js';
 
 export function createCard(item) {
   const card = document.createElement('div');
