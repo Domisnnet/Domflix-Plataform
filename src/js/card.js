@@ -15,18 +15,13 @@ export function createCard(item) {
   const img = document.createElement('img');
   img.src = item.img;
   img.alt = `Movie cover`;
-
   const iframe = document.createElement('iframe');
   iframe.frameBorder = '0';
   iframe.allow = 'autoplay; encrypted-media';
-
   const videoId = getYouTubeId(item.youtube);
-
   card.appendChild(iframe);
   card.appendChild(img);
-
   const ageBadge = getRandomAgeBadge();
-
   const details = document.createElement('div');
   details.className = 'card-details';
   details.innerHTML = `
@@ -90,6 +85,5 @@ export function createCard(item) {
     card.classList.remove('origin-left');
     card.classList.remove('origin-right');
   });
-
   return card;
 }

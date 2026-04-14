@@ -59,11 +59,6 @@ body.catalog-page {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .catalog-page .footer-links {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .catalog-page .slider-title {
-    font-size: 1.2rem;
-  }
+  .catalog-page .footer-links { grid-template-columns: repeat(1, 1fr); }
+  .catalog-page .slider-title { font-size: 1.2rem; }
 }

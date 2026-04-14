@@ -36,10 +36,10 @@ export const movies = [
 
 export function getProfiles() {
     return [
-        { name: 'Usuário 1', avatar: './assets/1.webp' },
-        { name: 'Usuário 2', avatar: './assets/2.webp' },
-        { name: 'Usuário 3', avatar: './assets/3.webp' },
-        { name: 'Infantil', avatar: './assets/4.png' },
+        { name: 'Fabiana', avatar: './assets/1.webp' },
+        { name: 'Alexander', avatar: './assets/2.webp' },
+        { name: 'Bashira', avatar: './assets/3.webp' },
+        { name: 'Dominique', avatar: './assets/4.png' },
     ];
 }
 
