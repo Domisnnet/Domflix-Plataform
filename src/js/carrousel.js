@@ -1,4 +1,4 @@
-import { createCard } from './Card.js';
+import { createCard } from './card.js';
 
 export function createCarousel(category) {
   const section = document.createElement('div');
