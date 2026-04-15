@@ -3,10 +3,8 @@ import { profiles } from './data.js';
 document.addEventListener('DOMContentLoaded', () => {
   const perfisContainer = document.querySelector('.perfis-container');
   if (perfisContainer) {
-    // Limpa o localStorage para garantir um estado inicial limpo
     localStorage.removeItem('perfilAtivoNome');
     localStorage.removeItem('perfilAtivoImagem');
-
     perfisContainer.innerHTML = profiles
       .map(
         (
@@ -27,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); 
         const nome = perfil.getAttribute('data-nome');
         let imagem = perfil.getAttribute('data-imagem');
-        // Remove o 'src/' para consistência no armazenamento
         if (imagem.startsWith('src/')) {
           imagem = imagem.substring(4);
         }
