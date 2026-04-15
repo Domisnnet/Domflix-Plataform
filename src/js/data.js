@@ -1,51 +1,89 @@
-
-export const movies = [
+export const profiles = [
   {
-    "title": "Ad Astra",
-    "description": "Um astronauta viaja para os confins do sistema solar para encontrar seu pai e desvendar um mistério que ameaça a sobrevivência de nosso planeta. Ele descobre segredos que desafiam a natureza da existência humana e nosso lugar no cosmos.",
-    "youtube": "https://www.youtube.com/watch?v=nxi6rt-bA9E",
-    "img": "https://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhA6B2GS7K.jpg",
-    "progress": 80
+    "name": "Fabiana",
+    "img": "src/assets/1.webp"
   },
   {
-    "title": "John Wick",
-    "description": "Um ex-assassino de aluguel sai da aposentadoria para rastrear os gângsteres que tiraram tudo dele.",
-    "youtube": "https://www.youtube.com/watch?v=C0BMx-qxsP4",
-    "img": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fXFwS2s89HeC3wzU.jpg"
+    "name": "Alexander",
+    "img": "src/assets/2.webp"
   },
   {
-    "title": "Vingadores: Ultimato",
-    "description": "Após os eventos devastadores de 'Vingadores: Guerra Infinita', o universo está em ruínas. Com a ajuda dos aliados restantes, os Vingadores se reúnem mais uma vez para reverter as ações de Thanos e restaurar o equilíbrio do universo.",
-    "youtube": "https://www.youtube.com/watch?v=g6ng8e_g32E",
-    "img": "https://image.tmdb.org/t/p/w500/q6725aR8Zs4IwGMXzZT8aC8j4vv.jpg"
+    "name": "Bashira",
+    "img": "src/assets/3.webp"
   },
   {
-    "title": "O Irlandês",
-    "description": "Um mafioso relembra seus possíveis envolvimentos no assassinato de Jimmy Hoffa.",
-    "youtube": "https://www.youtube.com/watch?v=2AIn_1b03P8",
-    "img": "https://image.tmdb.org/t/p/w500/mbm8k3gmJr6dTTas92YhZfBIQ4O.jpg",
-    "progress": 25
-  },
-  {
-    "title": "Coringa",
-    "description": "Em Gotham City, o comediante Arthur Fleck, que tem problemas mentais, é marginalizado pela sociedade. Ele embarca em uma espiral descendente de revolução e crimes sangrentos. Esse caminho o coloca frente a frente com seu alter ego: o Coringa.",
-    "youtube": "https://www.youtube.com/watch?v=t433PEQGErc",
-    "img": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+    "name": "Dominique",
+    "img": "src/assets/4.png"
   }
 ];
 
-export function getProfiles() {
-    return [
-        { name: 'Fabiana', avatar: 'src/assets/1.webp' },
-        { name: 'Alexander', avatar: 'src/assets/2.webp' },
-        { name: 'Bashira', avatar: 'src/assets/3.webp' },
-        { name: 'Dominique', avatar: 'src/assets/4.png' },
-    ];
-}
-
 export const categories = [
-  { title: "Lançamentos", items: movies },
-  { title: "Continuar assistindo", items: movies.filter(m => m.progress) },
-  { title: "Ação", items: movies.slice(0, 3) },
-  { title: "Comédia", items: movies.slice(2, 5) },
+  {
+    "title": "Animação",
+    "items": [
+      {
+        "img": "https://img.youtube.com/vi/c2_v_l_g_a8/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=c2_v_l_g_a8",
+        "progress": 80
+      },
+      {
+        "img": "https://img.youtube.com/vi/Lp--c3tq3l8/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=Lp--c3tq3l8"
+      },
+      {
+        "img": "https://img.youtube.com/vi/SdpU-ijnS2s/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=SdpU-ijnS2s"
+      },
+      {
+        "img": "https://img.youtube.com/vi/trH7j7sJp3A/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=trH7j7sJp3A"
+      },
+      {
+        "img": "https://img.youtube.com/vi/eHM2VdDD-E8/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=eHM2VdDD-E8"
+      },
+      {
+        "img": "https://img.youtube.com/vi/v-P_20ajc_I/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=v-P_20ajc_I"
+      },
+      {
+        "img": "https://img.youtube.com/vi/v-P_20ajc_I/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=v-P_20ajc_I"
+      }
+    ]
+  },
+  {
+    "title": "Ação",
+    "items": [
+      {
+        "img": "https://img.youtube.com/vi/Cine-8_pm3c/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=Cine-8_pm3c",
+        "progress": 30
+      },
+      {
+        "img": "https://img.youtube.com/vi/Y2_K2dGZ4gU/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=Y2_K2dGZ4gU"
+      },
+      {
+        "img": "https://img.youtube.com/vi/uYPbbksJxIg/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=uYPbbksJxIg"
+      },
+      {
+        "img": "https://img.youtube.com/vi/k_17D_1dALE/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=k_17D_1dALE"
+      },
+      {
+        "img": "https://img.youtube.com/vi/M7XM59lP8DM/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=M7XM59lP8DM"
+      },
+      {
+        "img": "https://img.youtube.com/vi/GRfXIaI-A0E/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=GRfXIaI-A0E"
+      },
+      {
+        "img": "https://img.youtube.com/vi/GRfXIaI-A0E/maxresdefault.jpg",
+        "youtube": "https://www.youtube.com/watch?v=GRfXIaI-A0E"
+      }
+    ]
+  }
 ];
